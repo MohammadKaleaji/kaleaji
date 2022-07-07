@@ -1,0 +1,62 @@
+html,
+body {
+    background-color: rgb(209, 194, 175);
+    height: 100%;
+    margin: 0;
+}
+
+h1,
+h2 {
+    text-align: center;
+    font-family: cursive, sens-serif;
+}
+
+h2 {
+    color: rgb(115, 66, 163);
+    font-size: 30px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    background-color: rgb(150, 103, 198);
+}
+
+th,
+.name {
+    text-align: center;
+}
+
+table,
+th,
+td {
+    border: 2px solid rgb(67, 25, 109);
+}
+
+th,
+td {
+    font-size: 20px;
+}
+
+.second-table {
+    padding-right: 10px;
+}
+
+footer {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: rgb(123, 109, 91);
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+footer p {
+    position: relative;
+    top: 18px;
+}
