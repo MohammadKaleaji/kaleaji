@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon"
+        href="https://satinalma.altinbas.edu.tr/wp-content/uploads/2018/05/cropped-logo-01-e1518776924256-1.png"
+        type="icon">
+    <title>Altinbas Survey</title>
+</head>
+
+<body>
+    <div class="content">
+
+        <h1 id="title">Altinbas University Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the University</p>
+
+        <form id="survey-form" action="#">
+            <div class="group">
+                <label id="name-label" for="name">Name</label><br>
+                <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+            </div>
+
+            <div class="group">
+                <label id="email-label" for="email">Email</label><br>
+                <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+            </div>
+
+            <div class="group">
+                <label id="number-label" for="number">Age<span class="optional">(optional)</span></label><br>
+                <input type="number" min="16" max="99" name="number" id="number" placeholder="Age">
+            </div>
+
+            <div class="group">
+                <label for="dropdown">Which option best describes your current status?</label><br>
+                <select name="dropdown" id="dropdown">
+                    <option value="Student">Student</option>
+                    <option value="Alumni">Alumni</option>
+                    <option value="Faculty Staff">Faculty Staff</option>
+                    <option value="Parent">Parent</option>
+                </select><br>
+            </div>
+
+            <!-- <div class="group-radio">
+                <p>Would you recommend Altinbas to a friend?</p>
+
+                <label class="radio">
+                    <input name="user-recommend" value="definitely" type="radio" class="input-radio"
+                        checked />Definitely</label>
+
+                <label class="radio">
+                    <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe</label>
+
+                <label class="radio"><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not sure</label>
+            </div><br> -->
+
+            <div class="group"></div>
+            <label for="dropdown">What is the degree you have completed in Altinbas University?</label><br>
+            <select name="dropdown" id="dropdown">
+                <option value="None">None</option>
+                <option value="Associate">Associate</option>
+                <option value="Undergraduate">Undergraduate</option>
+                <option value="Graduate">Graduate</option>
+                <option value="Phd">Phd</option>
+            </select><br>
+
+
+            <div>
+                <label class="q">What would you like to see improved? <span class="optional">(Check all that apply)</label></p>
+                <input type="checkbox" name="Campus" id="Campus" value="Campus">
+                <label class="down" for="Campus">Campus</label><br>
+                <input type="checkbox" name="Programs" id="Programs" value="Programs">
+                <label class="down" for="Programs">Programs</label><br>
+                <input type="checkbox" name="Education System" id="Education System" value="Education System">
+                <label class="down" for="Education System">Education System</label><br>
+                <input type="checkbox" name="Student Dormitories" id="Student Dormitories" value="Student Dormitories">
+                <label class="down" for="Student Dormitories">Student Dormitories</label><br>
+                <input type="checkbox" name="Student Clubs" id="Student Clubs" value="Student Clubs">
+                <label class="down" for="Student Clubs">Student Clubs</label><br>
+            </div>
+
+            <div class="group">
+                <label for="suggestions">Any comments or suggestions?</label><br>
+                <textarea name="suggestions" id="suggestions" placeholder="Enter your comment here..."></textarea><br>
+                <button id="submit" type="submit">Sumbit</button>
+            </div>
+
+        </form>
+
+    </div>
+</body>
+
+</html>
