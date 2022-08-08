@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background: url(img/javascriptbackground.png) no-repeat center center;
+    background-attachment: fixed;
+    background-position: relative;
+}
+
+#open-btn  {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 20%;
+    height: 10%;
+    font-size: 1.3rem;
+    color: green;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 0 0 20px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+#open-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+#modal {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 25%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    font-size: 1.2rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* Amimation */
+    animation-name: animatemodal;
+    animation-duration: 0.5s;
+}
+
+a, a:hover, a:focus, a:active {
+    color: inherit;
+}
+
+#close-btn {
+    font-size: 2rem;
+}
+
+#close-btn:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+#modal-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Animation Section */
+
+@keyframes animatemodal {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 50%;
+        opacity: 1;
+    }
+}
