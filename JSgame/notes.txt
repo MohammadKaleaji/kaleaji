@@ -1,0 +1,11 @@
+1. Becuase its just one round so instead of using table the score is on the top 
+of the page.
+
+2. Emojies are used instead of imgs.
+
+3. instead of two active bordes , one covers the battele area 
+
+computer_ch ---> c_ch
+comp_ch ---> computerChoice
+player_ch -----> playerChoice
+user_ch ----> p_ch
