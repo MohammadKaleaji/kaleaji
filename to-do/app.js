@@ -39,7 +39,9 @@ const newDiv = () => {
 
     deleteButton.addEventListener('click', function(e){
         let target = e.target;
-        target.parentElement.parentElement.remove();
+        // target.parentElement.parentElement.remove();
+        // Edit 1
+        target.parentElement.remove();
     });
 }
 
