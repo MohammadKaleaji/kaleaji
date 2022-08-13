@@ -1,0 +1,183 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    /* background: url(./img/peter-gargiulo-cGNCepznaV8-unsplash.jpg) no-repeat center center/ cover; */
+    /* background: rgb(49, 56, 65); */
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+h1, h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.8rem;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+    transition: all .3s ease-in-out;
+}
+
+#navbar {
+    width: 100%;
+    background-color: rgb(16, 17, 7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 2px solid red;
+    z-index: 5;
+}
+
+.nav-content {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.nav-content ul {
+    font-size: 1.125rem;
+    font-weight: bold;
+    padding: 0;
+    list-style: none;
+    width: 85%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-content ul li {
+    display: inline-block;
+    margin-right: 1.8rem;
+}
+
+.nav-content ul li:last-child {
+    margin-right: 0;
+}
+
+.nav-content ul li a {
+    text-decoration: none;
+    color: white;
+    transition: all .3s ease-in-out;
+}
+
+.nav-content ul li a:hover {
+    color: red;
+}
+
+/* Media queiries for different Sizes */
+
+@media(max-width: 400px) {
+    .nav-content ul{
+        font-size: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    #welcome-section {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        height: 90vh;
+    }
+}
+
+#welcome-section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    transition: all .3s ease-in-out;
+    color: white;
+}
+
+#welcome-section .container:hover {
+transform: scale(1.1);
+}
+
+
+#projects {
+    background: rgb(69, 87, 125);
+    color: white;
+    padding: 0.5rem 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.project-title {
+    padding-bottom: 1.875rem;
+    padding-top: 0.5rem;
+    font-size: 3rem;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards img {
+    margin-bottom: 1.2rem;
+}
+
+.cards a {
+    text-decoration: none;
+    color: white;
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    transition: all .3s ease-in-out;
+}
+
+#contact {
+    background: rgb(49, 56, 65);
+    color: #fff;
+    display: flex;
+    min-height: 80vh;
+    align-items: center;
+    text-align: center;
+    border-bottom: 2px solid red;
+}
+
+#contact h2 {
+    margin-bottom: 0;
+}
+
+#contact ul {
+    padding: 0;
+    font-size: 1.875rem;
+    list-style: none;
+    width: 100%;
+}
+
+#contact ul li {
+    display: inline-block;
+    margin-right: 2.5rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+#contact ul li:hover {
+    transform: scale(1.1) rotate(-5deg);
+}
+
+#contact ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer {
+    width: 100%;
+    /* background: rgb(49, 56, 65); */
+    color: white;
+    text-align: center;
+    
+}
+
