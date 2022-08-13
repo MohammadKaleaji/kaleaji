@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f32aa4e4ea.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="./img/icong.png">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="d-flex justify-content-evenly">
+
+            <div class="text-center">
+                <h4>Computer Score</h4>
+                <h3 id="computer-score">0</h3>
+            </div>
+
+            <div class="text-center">
+                <h5>Your Score</h5>
+                <h4 id="player-score">0</h4>
+            </div>
+
+        </div>
+
+        <div class="d-flex flex-row justify-content-center align-items-center active" style="height: 70vh;">
+
+            <div class="active">
+
+                <div class="text-center">
+
+                    <h4>Computer</h4>
+                    <h1 id="computer-ch" style="transform:rotate(180deg);" class="display-1">✊</h1>
+
+                    <div class="my-5">
+
+                        <div id="countdown" class="font-weight-bold m-2 text-danger">
+
+                        </div>
+
+                        <button type="button" id="start-btn"
+                            class="rounded-3 btn btn-warning btn-lg px-5 d-block mx-auto">Start</button>
+                        <b id="message" class="text-center">Message</b>
+                    </div>
+
+                    <h1 class="display-1" id="player-ch">✊</h1>
+                    <h4>Player</h4>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <footer>
+
+        <div class="d-flex justify-content-center " id="footer">
+
+
+            <button type="button" class="btn btn-primary p-0">
+                <h1 class="display-3 p-4" id="rock">✊</h1>
+            </button>
+
+
+            <button type="button" class="btn btn-success p-0 mx-1">
+                <h1 class="display-3 p-4" id="paper">🖐</h1>
+            </button>
+
+            <button type="button" class="btn btn-danger p-0">
+                <h1 class="display-3 p-4" id="scissors">✌️</h1>
+            </button>
+
+        </div>
+    
+    </footer>  
+
+
+
+    <!-- My Script -->
+    <script src="./script2.js"></script>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
