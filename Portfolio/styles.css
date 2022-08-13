@@ -83,6 +83,10 @@ h1, h3 {
         text-align: center;
         height: 90vh;
     }
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 #welcome-section {
